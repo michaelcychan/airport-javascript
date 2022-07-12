@@ -15,7 +15,6 @@ class Airport {
   }
   takeoff(plane) {
     this.slots = this.slots.filter(element => (element != plane) )
-    console.log(this.slots)
   }
   showEmptySlot() {
     return this.capacity - this.slots.length
